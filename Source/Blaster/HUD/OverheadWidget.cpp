@@ -56,9 +56,10 @@ FString UOverheadWidget::GetPlayerName(APawn* InPawn)
 	return PlayerName;
 }
 
-void UOverheadWidget::ShowOverheadText(FString PlayerName, FString PlayerNetRole)
+void UOverheadWidget::ShowOverheadText(FString PlayerName) // , FString PlayerNetRole)
 {
-	FString OverheadText = FString::Printf(TEXT("PlayerName : %s \n PlayerNetRole : %s"), *PlayerName, *PlayerNetRole);
+	//FString OverheadText = FString::Printf(TEXT("PlayerName : %s \n PlayerNetRole : %s"), *PlayerName, *PlayerNetRole);
+	FString OverheadText = FString::Printf(TEXT("%s"), *PlayerName);
 	SetDisplayText(OverheadText);
 }
 

@@ -22,7 +22,7 @@ public:
 	void SetDisplayText(FString TextToDisplay);
 
 	UFUNCTION(BlueprintCallable)
-	void ShowOverheadText(FString PlayerName, FString PlayerNetRole);
+		void ShowOverheadText(FString PlayerName);//, FString PlayerNetRole);
 
 private:
 
